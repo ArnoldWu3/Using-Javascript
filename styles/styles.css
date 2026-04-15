@@ -87,11 +87,11 @@ a {
     text-decoration: none;
 }
 
-main .a {
+main a:hover {
     text-decoration: underline;
 }
 
-footer .a {
+footer a:hover {
     text-decoration: underline;
 }
 
@@ -106,6 +106,7 @@ footer .a {
     - the header image is 100px wide and tall with 25px of space above, below, and on its left, and the top-level heading is centered in the remaining width.
     - there will be 25px of space between the header and main, and 50px of space between main and footer.
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
+    - COMMENT FROM ARNOLD: I set footer to be 60px tall, but it does not look as tall as the image. I decided to follow the written instructions, as I'm not confident in knowing how tall the footer in the image is.
 */
 
 header {
