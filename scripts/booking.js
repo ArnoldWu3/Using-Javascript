@@ -4,8 +4,8 @@
 // When do they need to be reset or updated?
 
 let calculatedCost = 0;
-let dailyRate = 35
-let numDaysSelected = 0
+let dailyRate = 35;
+let numDaysSelected = 0;
 
 const dayButtons = document.getElementsByClassName("blue-hover");
 const clearDaysButton = document.getElementById("clear-button");
@@ -21,7 +21,7 @@ const calculatedCostDisplay = document.getElementById("calculated-cost");
 
 for(let button of dayButtons) {
     if(!button.classList.contains("small-button") && !button.classList.contains("fake-button")) {
-        button.addEventListener("click", function () {
+        button.addEventListener("click", function (button, numDaysSelected) {
             if(!button.classList.contains("clicked")) {
                 button.classList.toggle("clicked");
                 numDaysSelected++;
