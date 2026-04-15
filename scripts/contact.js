@@ -3,9 +3,9 @@
 // hint: you can change the style of an element by modifying the value of that element's .style.fontSize, or by updating its .classList.
 const pageContent = document.getElementById("contact-page");
 const thankYouMessage = document.createElement("p");
-thankYouMessage.textContent = "Thank you for your message!"
-thankYouMessage.classList.add("large-text")
+thankYouMessage.textContent = "Thank you for your message!";
+thankYouMessage.classList.add("large-text");
 const submitButton = document.getElementById("submit-button");
 submitButton.addEventListener("click", function () {
-    pageContent.replaceChildren(thankYouMessage)
-})
+    pageContent.replaceChildren(thankYouMessage);
+});
