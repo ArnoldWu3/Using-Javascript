@@ -21,13 +21,13 @@ const calculatedCostDisplay = document.getElementById("calculated-cost");
 
 for(let button of dayButtons) {
     if(!button.classList.contains("small-button") && !button.classList.contains("fake-button")) {
-        button.addEventListener("click", function (button, numDaysSelected) {
+        button.addEventListener("click", function () {
             if(!button.classList.contains("clicked")) {
                 button.classList.toggle("clicked");
                 numDaysSelected++;
-                calculate();
             }
         });
+        button.addEventListener("click", calculate());
     }
 }
 
